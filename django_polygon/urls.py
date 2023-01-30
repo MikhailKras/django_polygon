@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('others/', include('others.urls')),
     path('calculate_geometry/', include('geometry.urls')),
 ]
