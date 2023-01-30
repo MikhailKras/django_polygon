@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from . import views
 
 urlpatterns = [
+    path('', views.get_home_page),
     path('admin/', admin.site.urls),
     path('others/', include('others.urls')),
     path('calculate_geometry/', include('geometry.urls')),
