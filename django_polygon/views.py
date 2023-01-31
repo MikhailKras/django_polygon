@@ -3,4 +3,9 @@ from django.http import HttpResponse, HttpResponseNotFound
 
 
 def get_home_page(request):
-    return render(request, 'home/index.html')
+    data = {
+        'resources': [
+            ['others', 'others'],
+        ]
+    }
+    return render(request, 'home/index.html', context=data)

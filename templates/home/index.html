@@ -6,6 +6,10 @@
 </head>
 <body>
     <h1>Resources</h1>
-    <p style="font-size: 24px"><a href="/others">Others</a></p>
+        <ul>
+            {% for url_name, resource in resources %}
+                <li style="font-size: 24px"><a href="/{{ url_name }}">{{ resource|title }}</a></li>
+            {% endfor %}
+        </ul>
 </body>
 </html>

@@ -7,7 +7,7 @@
 <body>
     <ul style="font-size: 30px">
       {% for url, name in urls_names %}
-        <li><a href="{{ url }}">{{ name }}</a></li>
+        <li><a href="{{ url }}">{{ name|title }}</a></li>
       {% endfor %}
     </ul>
 </body>
