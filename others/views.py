@@ -10,7 +10,8 @@ def get_menu_page(request):
     data = {
         'urls_names': [['reeves', 'info about Keanu Reeves'],
                        ['interesting_facts', 'interesting facts'],
-                       ['people', 'people']
+                       ['people', 'people'],
+                       ['beautiful_table', 'beautiful table']
                        ],
     }
     return render(request, 'menu/index.html', context=data)
@@ -49,3 +50,7 @@ def get_info_people(request):
         'people_info': people_info
     }
     return render(request, 'people/index.html', context=data)
+
+
+def get_beautiful_table(request):
+    return render(request, 'beatiful_table/beatiful_table.html')

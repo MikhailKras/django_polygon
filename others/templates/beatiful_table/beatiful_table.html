@@ -1,0 +1,45 @@
+{% extends 'base/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Title
+{% endblock %}
+
+{% block css_addition %}
+    <link rel="stylesheet" href="{% static 'beautiful_table/beautiful_table.css' %}">
+{% endblock %}
+
+{% block content %}
+    <table class="styled-table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Points</th>
+            <th>Active</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Dom</td>
+            <td>6000</td>
+            <td>False</td>
+        </tr>
+        <tr class="active-row">
+            <td>Melissa</td>
+            <td>5150</td>
+            <td>True</td>
+        </tr>
+         <tr class="active-row">
+            <td>David</td>
+            <td>4500</td>
+            <td>True</td>
+        </tr>
+        <tr>
+            <td>Gerard</td>
+            <td>3000</td>
+            <td>False</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
