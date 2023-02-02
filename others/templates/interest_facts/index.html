@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Interests facts</title>
-</head>
-<body>
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Interests facts
+{% endblock %}
+
+{% block content %}
     <h1>Мощный удар</h1>
         <p style="font-size: 24px">Норвежец {{ power_man }} прославился тем, что 9 ноября 2006 г. в Осло на съемках телевизионной передачи
             "Senkveld" телеканал TV2 в течение одной минуты сломал рукой 90 бетонных блоков.</p>
@@ -14,5 +14,4 @@
     <h1>Человек-ёж</h1>
         <p style="font-size: 24px">23 марта 2004 г. в городе Наньнин (Китай) в голову и лицо отважного китайца Вей Шенгчу было воткнуто
             {{ count_needle }} игл для иглоукалывания.</p>
-</body>
-</html>
+{% endblock %}

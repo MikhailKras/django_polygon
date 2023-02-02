@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Menu page for others</title>
-</head>
-<body>
+{% extends 'base/base.html' %}
+
+{% block title %}
+    Menu page for others
+{% endblock %}
+
+{% block content %}
     <ul style="font-size: 30px">
       {% for url, name in urls_names %}
         <li><a href="{{ url }}">{{ name|title }}</a></li>
       {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock %}

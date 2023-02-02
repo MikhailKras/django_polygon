@@ -1,0 +1,6 @@
+<nav style="font-size: 24px">
+    {% if request.path != '/others'%}
+        <a href="/">Home</a> |
+    {% endif %}
+    <a href="{% url 'other-home' %}">Other home</a>
+</nav>
