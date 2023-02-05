@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'geometry',
     'others',
     'book_app',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
